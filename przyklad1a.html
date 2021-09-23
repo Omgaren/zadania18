@@ -1,0 +1,21 @@
+<html>
+    <head>
+    <title>Przykład nr 1 </title>
+        <script language="JavaScript">
+            function WinOpen_golebiewski(nazwa, x, y, window_name) {
+                window.open(nazwa, window_name,`toolbar=no,directories=no,menubar=no,height=280,width=160,top=${y},left=${x}`);
+            }
+        </script>
+    </head>
+
+    <body>
+        <div id="imie" style="font-size: 6cm;">Jan Gołębiewski</div>
+
+        <form>
+            <input type="button" name="przycisk" value="Nowa Strona" onclick="WinOpen_golebiewski('obraz1.html', 600, 400, '1')">
+            <input type="button" name="przycisk" value="Grafika 2" onclick="WinOpen_golebiewski('obraz2.html', 800, 400, '2')">
+            <input type="button" name="przycisk" value="Grafika 3" onclick="WinOpen_golebiewski('obraz3.html', 1000, 400, '3')">
+            <input type="button" name="przycisk" value="Grafika 4" onclick="WinOpen_golebiewski('obraz4.html', 1200, 400, '4')">
+        </form>
+    </body>
+</html>
